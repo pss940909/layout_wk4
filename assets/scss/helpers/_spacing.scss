@@ -32,6 +32,24 @@ $base-spacing: 4px;
   }
 }
 
+@include pad {
+  @for $i from 0 through $max {
+    .mx-md-#{$i} {
+      margin-right: $i * $base-spacing;
+      margin-left: $i * $base-spacing;
+    }
+  }
+}
+
+@include mobile {
+  @for $i from 0 through $max {
+    .mx-sm-#{$i} {
+      margin-right: $i * $base-spacing;
+      margin-left: $i * $base-spacing;
+    }
+  }
+}
+
 // margin right
 @for $i from 0 through $max {
   .mr-#{$i} {
@@ -39,10 +57,42 @@ $base-spacing: 4px;
   }
 }
 
+@include pad {
+  @for $i from 0 through $max {
+    .mr-md-#{$i} {
+      margin-right: $i * $base-spacing;
+    }
+  }
+}
+
+@include mobile {
+  @for $i from 0 through $max {
+    .mr-sm-#{$i} {
+      margin-right: $i * $base-spacing;
+    }
+  }
+}
+
 // margin left
 @for $i from 0 through $max {
   .ml-#{$i} {
     margin-left: $i * $base-spacing;
+  }
+}
+
+@include pad {
+  @for $i from 0 through $max {
+    .ml-md-#{$i} {
+      margin-left: $i * $base-spacing;
+    }
+  }
+}
+
+@include mobile {
+  @for $i from 0 through $max {
+    .ml-sm-#{$i} {
+      margin-left: $i * $base-spacing;
+    }
   }
 }
 
@@ -115,5 +165,51 @@ $base-spacing: 4px;
 @for $i from 0 through $max {
   .pr-#{$i} {
     padding-right: $i * $base-spacing;
+  }
+}
+
+// padding top
+@for $i from 0 through $max {
+  .pt-#{$i} {
+    padding-top: $i * $base-spacing;
+  }
+}
+
+@include pad {
+  @for $i from 0 through $max {
+    .pt-md-#{$i} {
+      padding-top: $i * $base-spacing;
+    }
+  }
+}
+
+@include mobile {
+  @for $i from 0 through $max {
+    .pt-sm-#{$i} {
+      padding-top: $i * $base-spacing;
+    }
+  }
+}
+
+// padding bottom
+@for $i from 0 through $max {
+  .pb-#{$i} {
+    padding-bottom: $i * $base-spacing;
+  }
+}
+
+@include pad {
+  @for $i from 0 through $max {
+    .pb-md-#{$i} {
+      padding-bottom: $i * $base-spacing;
+    }
+  }
+}
+
+@include mobile {
+  @for $i from 0 through $max {
+    .pb-sm-#{$i} {
+      padding-bottom: $i * $base-spacing;
+    }
   }
 }
