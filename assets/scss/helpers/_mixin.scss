@@ -1,0 +1,13 @@
+// 平板
+@mixin pad {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+// 手機
+@mixin mobile {
+  @media screen and (max-width: 375px) {
+    @content;
+  }
+}

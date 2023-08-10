@@ -1,5 +1,16 @@
-@import './layout/header.scss';
-@import './layout/footer.scss';
+@import "./vairiables";
+@import "./reset";
+// helpers
+@import "./helpers/mixin"; // media query 設定
+@import "./helpers/spacing";
 
+@import "./base";
 
-@import './pages/index.scss';
+// layout
+@import "./layout/header";
+@import "./layout/footer";
+
+// components
+
+// pages
+@import "./pages/index.scss";
