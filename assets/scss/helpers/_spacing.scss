@@ -1,6 +1,7 @@
 $max: 10;
 $base-spacing: 4px;
 
+// margin bottom
 @for $i from 0 through $max {
   .mb-#{$i} {
     margin-bottom: $i * $base-spacing;
@@ -20,5 +21,99 @@ $base-spacing: 4px;
     .mb-sm-#{$i} {
       margin-bottom: $i * $base-spacing;
     }
+  }
+}
+
+// margin x
+@for $i from 0 through $max {
+  .mx-#{$i} {
+    margin-right: $i * $base-spacing;
+    margin-left: $i * $base-spacing;
+  }
+}
+
+// margin right
+@for $i from 0 through $max {
+  .mr-#{$i} {
+    margin-right: $i * $base-spacing;
+  }
+}
+
+// margin left
+@for $i from 0 through $max {
+  .ml-#{$i} {
+    margin-left: $i * $base-spacing;
+  }
+}
+
+// padding --------------------------------
+@for $i from 0 through $max {
+  .py-#{$i} {
+    padding-top: $i * $base-spacing;
+    padding-bottom: $i * $base-spacing;
+  }
+}
+
+@include pad {
+  @for $i from 0 through $max {
+    .py-md-#{$i} {
+      padding-top: $i * $base-spacing;
+      padding-bottom: $i * $base-spacing;
+    }
+  }
+}
+
+@include mobile {
+  @for $i from 0 through $max {
+    .py-sm-#{$i} {
+      padding-top: $i * $base-spacing;
+      padding-bottom: $i * $base-spacing;
+    }
+  }
+}
+
+@for $i from 0 through $max {
+  .px-#{$i} {
+    padding-right: $i * $base-spacing;
+    padding-left: $i * $base-spacing;
+  }
+}
+
+@include pad {
+  @for $i from 0 through $max {
+    .px-md-#{$i} {
+      padding-right: $i * $base-spacing;
+      padding-left: $i * $base-spacing;
+    }
+  }
+}
+
+@include pad {
+  @for $i from 0 through $max {
+    .px-md-#{$i} {
+      padding-right: $i * $base-spacing;
+      padding-left: $i * $base-spacing;
+    }
+  }
+}
+
+// padding left
+@for $i from 0 through $max {
+  .pl-#{$i} {
+    padding-left: $i * $base-spacing;
+  }
+}
+
+@include pad {
+  @for $i from 0 through $max {
+    .pl-md-#{$i} {
+      padding-left: $i * $base-spacing;
+    }
+  }
+}
+
+@for $i from 0 through $max {
+  .pr-#{$i} {
+    padding-right: $i * $base-spacing;
   }
 }

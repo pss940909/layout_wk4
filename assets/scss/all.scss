@@ -1,10 +1,15 @@
 @import "./vairiables";
 @import "./reset";
-// helpers
+// mixin
 @import "./helpers/mixin"; // media query 設定
-@import "./helpers/spacing";
 
 @import "./base";
+
+// helpers
+@import "./helpers/spacing";
+@import "./helpers/background";
+@import "./helpers/flex";
+@import "./helpers/font";
 
 // layout
 @import "./layout/header";
