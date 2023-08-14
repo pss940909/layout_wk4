@@ -1,0 +1,17 @@
+$grid-max: 12;
+
+$base-grid-width: calc((1 / 12) * 100%);
+
+// 格線系統
+
+.row {
+  display: flex;
+  margin-right: -12px;
+  margin-left: -12px;
+}
+
+@for $i from 1 through $grid-max {
+  .col-#{$i} {
+    width: $i * $base-grid-width;
+  }
+}
