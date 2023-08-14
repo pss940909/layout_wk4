@@ -1,7 +1,7 @@
 $max: 10;
 $base-spacing: 4px;
 
-// margin bottom
+// margin bottom----------------------------------------
 @for $i from 0 through $max {
   .mb-#{$i} {
     margin-bottom: $i * $base-spacing;
@@ -9,6 +9,14 @@ $base-spacing: 4px;
 }
 
 @include pad {
+  @for $i from 0 through $max {
+    .mb-lg-#{$i} {
+      margin-bottom: $i * $base-spacing;
+    }
+  }
+}
+
+@include media-576 {
   @for $i from 0 through $max {
     .mb-md-#{$i} {
       margin-bottom: $i * $base-spacing;
@@ -24,7 +32,7 @@ $base-spacing: 4px;
   }
 }
 
-// margin x
+// margin x ---------------------------------------------
 @for $i from 0 through $max {
   .mx-#{$i} {
     margin-right: $i * $base-spacing;
@@ -33,6 +41,15 @@ $base-spacing: 4px;
 }
 
 @include pad {
+  @for $i from 0 through $max {
+    .mx-lg-#{$i} {
+      margin-right: $i * $base-spacing;
+      margin-left: $i * $base-spacing;
+    }
+  }
+}
+
+@include media-576 {
   @for $i from 0 through $max {
     .mx-md-#{$i} {
       margin-right: $i * $base-spacing;
@@ -50,7 +67,7 @@ $base-spacing: 4px;
   }
 }
 
-// margin right
+// margin right ----------------------------------------------
 @for $i from 0 through $max {
   .mr-#{$i} {
     margin-right: $i * $base-spacing;
@@ -58,6 +75,14 @@ $base-spacing: 4px;
 }
 
 @include pad {
+  @for $i from 0 through $max {
+    .mr-lg-#{$i} {
+      margin-right: $i * $base-spacing;
+    }
+  }
+}
+
+@include media-576 {
   @for $i from 0 through $max {
     .mr-md-#{$i} {
       margin-right: $i * $base-spacing;
@@ -73,7 +98,7 @@ $base-spacing: 4px;
   }
 }
 
-// margin left
+// margin left ------------------------------------
 @for $i from 0 through $max {
   .ml-#{$i} {
     margin-left: $i * $base-spacing;
@@ -81,6 +106,14 @@ $base-spacing: 4px;
 }
 
 @include pad {
+  @for $i from 0 through $max {
+    .ml-lg-#{$i} {
+      margin-left: $i * $base-spacing;
+    }
+  }
+}
+
+@include media-576 {
   @for $i from 0 through $max {
     .ml-md-#{$i} {
       margin-left: $i * $base-spacing;
@@ -96,7 +129,7 @@ $base-spacing: 4px;
   }
 }
 
-// padding --------------------------------
+// padding y --------------------------------
 @for $i from 0 through $max {
   .py-#{$i} {
     padding-top: $i * $base-spacing;
@@ -105,6 +138,15 @@ $base-spacing: 4px;
 }
 
 @include pad {
+  @for $i from 0 through $max {
+    .py-lg-#{$i} {
+      padding-top: $i * $base-spacing;
+      padding-bottom: $i * $base-spacing;
+    }
+  }
+}
+
+@include media-576 {
   @for $i from 0 through $max {
     .py-md-#{$i} {
       padding-top: $i * $base-spacing;
@@ -122,6 +164,8 @@ $base-spacing: 4px;
   }
 }
 
+// padding x -------------------------------
+
 @for $i from 0 through $max {
   .px-#{$i} {
     padding-right: $i * $base-spacing;
@@ -131,14 +175,14 @@ $base-spacing: 4px;
 
 @include pad {
   @for $i from 0 through $max {
-    .px-md-#{$i} {
+    .px-lg-#{$i} {
       padding-right: $i * $base-spacing;
       padding-left: $i * $base-spacing;
     }
   }
 }
 
-@include pad {
+@include media-576 {
   @for $i from 0 through $max {
     .px-md-#{$i} {
       padding-right: $i * $base-spacing;
@@ -147,7 +191,16 @@ $base-spacing: 4px;
   }
 }
 
-// padding left
+@include mobile {
+  @for $i from 0 through $max {
+    .px-sm-#{$i} {
+      padding-right: $i * $base-spacing;
+      padding-left: $i * $base-spacing;
+    }
+  }
+}
+
+// padding left ---------------------------
 @for $i from 0 through $max {
   .pl-#{$i} {
     padding-left: $i * $base-spacing;
@@ -156,19 +209,20 @@ $base-spacing: 4px;
 
 @include pad {
   @for $i from 0 through $max {
-    .pl-md-#{$i} {
+    .pl-lg-#{$i} {
       padding-left: $i * $base-spacing;
     }
   }
 }
 
+// padding right -------------------------------
 @for $i from 0 through $max {
   .pr-#{$i} {
     padding-right: $i * $base-spacing;
   }
 }
 
-// padding top
+// padding top ----------------------------
 @for $i from 0 through $max {
   .pt-#{$i} {
     padding-top: $i * $base-spacing;
@@ -176,6 +230,14 @@ $base-spacing: 4px;
 }
 
 @include pad {
+  @for $i from 0 through $max {
+    .pt-lg-#{$i} {
+      padding-top: $i * $base-spacing;
+    }
+  }
+}
+
+@include media-576 {
   @for $i from 0 through $max {
     .pt-md-#{$i} {
       padding-top: $i * $base-spacing;
@@ -199,6 +261,14 @@ $base-spacing: 4px;
 }
 
 @include pad {
+  @for $i from 0 through $max {
+    .pb-lg-#{$i} {
+      padding-bottom: $i * $base-spacing;
+    }
+  }
+}
+
+@include media-576 {
   @for $i from 0 through $max {
     .pb-md-#{$i} {
       padding-bottom: $i * $base-spacing;

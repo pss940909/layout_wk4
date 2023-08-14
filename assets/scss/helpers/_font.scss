@@ -3,6 +3,10 @@
   color: #ffffff;
 }
 
+.text-primary-dark {
+  color: $primary-dark;
+}
+
 // position
 .text-center {
   text-align: center;
@@ -11,4 +15,9 @@
 // font-size
 .fz-sm {
   font-size: $font-size-sm;
+}
+
+// font weight
+.fw-bold {
+  font-weight: bold;
 }
