@@ -1,3 +1,15 @@
+// 通用
+
+.subtitle {
+  font-size: $h2-fz;
+  font-weight: bold;
+  text-align: center;
+
+  @include mobile {
+    font-size: $h4-fz;
+  }
+}
+
 .index-banner {
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
   height: 787px;
@@ -41,5 +53,32 @@
         font-size: $h4-fz;
       }
     }
+  }
+}
+
+// FEATURE SECTION ====================================
+
+.feature-sec {
+  background-color: $primary-light;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  .feature-item {
+    img {
+      display: block;
+      width: 100px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    h4 {
+      font-size: $h4-fz;
+    }
+  }
+}
+
+@include mobile {
+  .feature-sec {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }

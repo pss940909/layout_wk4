@@ -15,3 +15,19 @@ $base-grid-width: calc((1 / 12) * 100%);
     width: $i * $base-grid-width;
   }
 }
+
+@include pad {
+  @for $i from 1 through $grid-max {
+    .col-lg-#{$i} {
+      width: $i * $base-grid-width;
+    }
+  }
+}
+
+@include mobile {
+  @for $i from 1 through $grid-max {
+    .col-sm-#{$i} {
+      width: $i * $base-grid-width;
+    }
+  }
+}
