@@ -32,22 +32,27 @@
   }
 }
 
-@media screen and (max-width: 680px) {
+@include media-576 {
   .footer-left {
     padding-top: 24px;
+
     .footer-menu {
       display: none;
     }
+
     .footer-contact {
       font-size: $font-size-base;
+
       .material-icons-outlined {
         font-size: 18px;
         margin-right: 8px;
       }
     }
   }
+
   .footer-right {
     padding-top: 24px;
+
     .social-media img {
       width: 24px;
     }
