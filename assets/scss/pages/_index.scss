@@ -190,6 +190,11 @@
       width: 100%;
     }
 
+    input,
+    textarea {
+      padding: 6px 12px;
+    }
+
     input[type="checkbox"] {
       width: auto;
     }
@@ -198,5 +203,26 @@
   input[type="button"] {
     width: 66.66667%; // 4/6
     border: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+@include pad {
+  .contact-form {
+    input[type="button"] {
+      width: 60%; // 6/10
+    }
+  }
+}
+
+@include mobile {
+  .contact-form {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    input[type="button"] {
+      width: 100%; // 6/10
+    }
   }
 }
