@@ -138,6 +138,12 @@ $base-spacing: 4px;
 }
 
 // padding y --------------------------------
+
+.py-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
 @for $i from 0 through $max {
   .py-#{$i} {
     padding-top: $i * $base-spacing;
@@ -231,6 +237,7 @@ $base-spacing: 4px;
 }
 
 // padding top ----------------------------
+
 @for $i from 0 through $max {
   .pt-#{$i} {
     padding-top: $i * $base-spacing;

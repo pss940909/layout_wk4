@@ -19,6 +19,9 @@
 
 // components
 @import "./components/btn";
+@import "./components/title";
 
 // pages
-@import "./pages/index.scss";
+@import "./pages/index";
+@import "./pages/stores";
+@import "./pages/faq";
