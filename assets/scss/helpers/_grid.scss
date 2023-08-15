@@ -16,6 +16,14 @@ $base-grid-width: calc((1 / 12) * 100%);
   }
 }
 
+@include media-992 {
+  @for $i from 1 through $grid-max {
+    .col-xl-#{$i} {
+      width: $i * $base-grid-width;
+    }
+  }
+}
+
 @include pad {
   @for $i from 1 through $grid-max {
     .col-lg-#{$i} {

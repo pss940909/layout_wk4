@@ -1,10 +1,18 @@
-$max: 10;
+$max: 12;
 $base-spacing: 4px;
 
 // margin bottom----------------------------------------
 @for $i from 0 through $max {
   .mb-#{$i} {
     margin-bottom: $i * $base-spacing;
+  }
+}
+
+@include media-992 {
+  @for $i from 0 through $max {
+    .mb-xl-#{$i} {
+      margin-bottom: $i * $base-spacing;
+    }
   }
 }
 
