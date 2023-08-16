@@ -144,6 +144,10 @@ $base-spacing: 4px;
   padding-bottom: 80px;
 }
 
+.pb-80 {
+  padding-bottom: 80px;
+}
+
 @for $i from 0 through $max {
   .py-#{$i} {
     padding-top: $i * $base-spacing;
@@ -233,6 +237,14 @@ $base-spacing: 4px;
 @for $i from 0 through $max {
   .pr-#{$i} {
     padding-right: $i * $base-spacing;
+  }
+}
+
+@include media-576 {
+  @for $i from 0 through $max {
+    .pr-md-#{$i} {
+      padding-right: $i * $base-spacing;
+    }
   }
 }
 

@@ -21,9 +21,11 @@
 @import "./components/btn";
 @import "./components/title";
 @import "./components/pagination";
+@import "./components/breadcrumb";
 
 // pages
 @import "./pages/index";
 @import "./pages/stores";
 @import "./pages/faq";
 @import "./pages/bloglist";
+@import "./pages/blog_page";

@@ -19,6 +19,29 @@
     display: none;
   }
 }
+// blog_page =============================
+.blog-page-nav {
+  display: block;
+}
+
+.blog-page-search {
+  @include media-576 {
+    display: none;
+  }
+}
+
+@include media-576 {
+  .blog-title {
+    width: 100%;
+    li {
+      flex-grow: 1;
+      text-align: center;
+    }
+    a {
+      font-size: $font-size-base;
+    }
+  }
+}
 
 // 下方部落格列表
 .blog-sec {
