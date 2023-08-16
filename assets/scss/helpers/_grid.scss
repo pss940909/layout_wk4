@@ -38,6 +38,14 @@ $base-grid-width: calc((1 / 12) * 100%);
   }
 }
 
+@include media-576 {
+  @for $i from 1 through $grid-max {
+    .col-md-#{$i} {
+      width: $i * $base-grid-width;
+    }
+  }
+}
+
 @include mobile {
   @for $i from 1 through $grid-max {
     .col-sm-#{$i} {
