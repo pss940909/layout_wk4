@@ -10,6 +10,12 @@ $base-grid-width: calc((1 / 12) * 100%);
   margin-left: -12px;
 }
 
+@include pad {
+  .row-lg {
+    display: flex;
+  }
+}
+
 @for $i from 1 through $grid-max {
   .col-#{$i} {
     width: $i * $base-grid-width;

@@ -16,6 +16,12 @@
 }
 
 .store-item {
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
   .store-name {
     padding: 8px 24px;
     border: 1px solid #00000020;
@@ -43,5 +49,15 @@
     text-align: center;
     padding-top: 16px;
     padding-bottom: 16px;
+  }
+}
+
+iframe {
+  @include pad {
+    height: 414px;
+  }
+
+  @include mobile {
+    height: 208px;
   }
 }
