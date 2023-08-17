@@ -1,7 +1,6 @@
 .pagination {
   margin-right: auto;
   margin-left: auto;
-  margin-top: 64px;
 
   li {
     text-align: center;
@@ -29,13 +28,7 @@
     transition: all 0.5s;
   }
 
-  @include media-992 {
-    margin-top: 56px;
-  }
-
   @include media-576 {
-    margin-top: 40px;
-
     li {
       width: 40px;
     }

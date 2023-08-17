@@ -134,3 +134,16 @@
     display: none;
   }
 }
+
+// 分頁 =====================
+.blog-pagiantion {
+  margin-top: 64px;
+
+  @include media-992 {
+    margin-top: 56px;
+  }
+
+  @include media-576 {
+    margin-top: 40px;
+  }
+}
